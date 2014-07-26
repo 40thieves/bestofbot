@@ -1,0 +1,25 @@
+{
+  "name": "bestofbot",
+  "version": "0.0.1",
+  "description": "IRC Bot for tracking best of moments on DTNS",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "irc": "~0.3.6"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.21.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "irc",
+    "bot"
+  ],
+  "author": "Alasdair Smith <alasdairsmith100@gmail.com> (http://alasdairsmith.co.uk)",
+  "license": "MIT"
+}
