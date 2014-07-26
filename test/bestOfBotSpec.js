@@ -94,7 +94,7 @@ describe('BestOfBot', function() {
 		});
 
 		it('sends messages', function(done) {
-			bsb.on('message', function(message) {
+			bsb.on('raw-message', function(message) {
 				expect(message).to.exist;
 				expect(message).to.equal('hello world');
 
