@@ -10,7 +10,11 @@ describe('Config', function() {
 				host: 'localhost',
 				nick: 'bestofbot',
 				channels: ['#foo'],
-				joinMessage: 'I\'m a bot'
+				joinMessage: 'I\'m a bot',
+				filter: {
+					command: '!b ',
+					data: '(\\w+)+'
+				}
 			};
 
 			expect(config()).to.deep.equal(expected);
