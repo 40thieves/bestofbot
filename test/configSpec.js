@@ -12,8 +12,8 @@ describe('Config', function() {
 				channels: ['#foo'],
 				joinMessage: 'I\'m a bot',
 				filter: {
-					command: '!b ',
-					data: '(\\w+)+'
+					command: '!b',
+					data: '(\\w+)'
 				}
 			};
 

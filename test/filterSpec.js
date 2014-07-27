@@ -7,7 +7,7 @@ describe('Filter', function() {
 	var filter = new Filter({
 		filter: {
 			command: '!b',
-			data: '(\\w+)*'
+			data: '(\\w+)'
 		}
 	});
 
