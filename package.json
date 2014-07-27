@@ -20,6 +20,17 @@
     "irc",
     "bot"
   ],
-  "author": "Alasdair Smith <alasdairsmith100@gmail.com> (http://alasdairsmith.co.uk)",
+  "author": {
+    "name": "Alasdair Smith",
+    "email": "alasdairsmith100@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:40thieves/bestofbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/40thieves/bestofbot/issues"
+  },
+  "homepage": "https://github.com/40thieves/bestofbot",
   "license": "MIT"
 }
