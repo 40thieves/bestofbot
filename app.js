@@ -1,2 +1,1 @@
-var BestOfBot = require('./lib/bestofbot.js');
-var bestOfBot = new BestOfBot();
+module.exports = require('./lib/bestofbot.js');
