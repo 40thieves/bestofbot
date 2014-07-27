@@ -13,7 +13,7 @@ Tracks the best moments of [Daily Tech News Show](http://dailytechnewsshow.com),
 
 Messages matching the `!b` command are emitted on the `message` event. Any data included on the command is included in the `message` argument.
 
-```
+```js
 var BSB = require('bestofbot');
 
 var bsb = new BSB();
@@ -29,7 +29,7 @@ bsb.on('message', function(message, user, channel) {
 
 Set the filter to use `!s` instead:
 
-```
+```js
 var BSB = require('bestofbot');
 var bsb = new BSB({
     filter: {
@@ -40,7 +40,7 @@ var bsb = new BSB({
 
 Set the command data to only one word. Default is for unlimited word.
 
-```
+```js
 var BSB = require('bestofbot');
 var bsb = new BSB({
     filter: {
@@ -53,7 +53,7 @@ var bsb = new BSB({
 
 Not really designed for this, but you can set the IRC host and channels to listen on.
 
-```
+```js
 var BSB = require('bestofbot');
 var bsb = new BSB({
     host: 'YOUR_HOST_HERE',
@@ -69,7 +69,7 @@ var bsb = new BSB({
 
 The bot will. by default, say `I'm a bot` when joining a channel. Set this by passing in a `joinMessage`.
 
-```
+```js
 var BSB = require('bestofbot');
 var bsb = new BSB({
     joinMessage: 'Greetings!'
