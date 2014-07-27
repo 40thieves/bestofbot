@@ -12,8 +12,12 @@ describe('Filter', function() {
 			}
 		});
 
-		it('correctly finds messages that match the config', function() {
+		it('returns truthy for messages that match the filter', function() {
 			expect(filter.test('!b now')).to.be.ok;
+		});
+
+		it('returns false for messages that do not match the filter', function() {
+			expect(filter.test('foo')).to.be.false;
 		});
 	});
 });
