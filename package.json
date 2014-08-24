@@ -1,6 +1,6 @@
 {
   "name": "bestofbot",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "IRC Bot for tracking best of moments on DTNS",
   "main": "app.js",
   "directories": {
