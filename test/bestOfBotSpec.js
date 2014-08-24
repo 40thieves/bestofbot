@@ -67,7 +67,7 @@ describe('BestOfBot', function() {
 	describe('messages', function() {
 		this.timeout(10000);
 
-		var bsb = new BestOfBot({ joinMessage: false }) // Create listener bot
+		var bsb = new BestOfBot({ joinMessage: false, channels: ['#foo', '#bar'] }) // Create listener bot
 		,	messagebot
 		;
 
@@ -104,11 +104,22 @@ describe('BestOfBot', function() {
 			messagebot.send('hello world');
 		});
 
-		after(function() {
+		it('sends messages to specific channels', function(done) {
+			bsb.on('raw-message', function(message, from, to) {
+				expect(message).to.exist;
+				expect(message).to.equal('message');
+				expect(to).to.equal('#bar');
+
+				done();
+			});
+
+			messagebot.send('message', '#bar');
+		});
+
+		afterEach(function() {
 			bsb.removeAllListeners();
 			messagebot.removeAllListeners();
 		});
 
-		
 	});
 });
